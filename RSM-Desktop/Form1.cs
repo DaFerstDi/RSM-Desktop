@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 using RSM_Desktop.Models;
 using RSM_Desktop.Repository;
 
@@ -76,6 +77,7 @@ namespace RSM_Desktop
                 dataGridView[0, i].Value = _resList[i];
                 dataGridView[0, i].ReadOnly = true;
                 dataGridView[1, i].Value = command.getResByName(_resList[i]).get_value();
+              
             }
 
             dataGridView.Columns[0].Width = Convert.ToInt32((dataGridView.Width - 20) * 0.75);

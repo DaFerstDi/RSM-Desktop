@@ -11,12 +11,14 @@ namespace RSM_Desktop.Models
         private int _value;
         private int _maxValue;
         private String _name;
+        private bool _IsCarriage;
 
-        public Resource(String name, int value, int maxValue)
+        public Resource(String name, int value, int maxValue, bool IsCarriage = false)
         {
             this._name = name;
             set_value(value);
             set_maxValue(maxValue);
+            this._IsCarriage = IsCarriage;
         }
 
         public void set_maxValue(int maxValue)
@@ -44,6 +46,11 @@ namespace RSM_Desktop.Models
         public String getName()
         {
             return this._name;
+        }
+
+        public bool getIsCarriage()
+        {
+            return this._IsCarriage;
         }
     }
 }

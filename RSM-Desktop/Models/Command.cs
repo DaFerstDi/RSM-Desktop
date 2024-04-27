@@ -38,10 +38,10 @@ namespace RSM_Desktop.Models
                 this._name = name;
                 this.money = new Resource("Наличные", 4000000, 0);
                 this.points = new Resource("Победные очки", 0, 0);
-                this.pv = new Resource("Полувагоны (ПВ)", 20, -10);
-                this.cis = new Resource("Цистерны (Ц)", 0, -10);
-                this.pl = new Resource("Платформы (ПЛ)", 0, -10);
-                this.kr = new Resource("Крытые вагоны (КР)", 0, -10);
+                this.pv = new Resource("Полувагоны (ПВ)", 20, -10, IsCarriage: true);
+                this.cis = new Resource("Цистерны (Ц)", 0, -10, IsCarriage: true);
+                this.pl = new Resource("Платформы (ПЛ)", 0, -10, IsCarriage: true);
+                this.kr = new Resource("Крытые вагоны (КР)", 0, -10, IsCarriage: true);
                 this.ports_okt = new Resource("Порты Октябрьской ж.д.", 0, 5);
                 this.ports_sev = new Resource("Порты Северо-Кавказской ж.д.", 0, 5);
                 this.ports_dv = new Resource("Порты Дальневосточной ж.д.", 0, 5);
