@@ -179,5 +179,6 @@ namespace RSM_Desktop
             compCost4.Text = CostCalculator.Calculate(command4).ToString();
 
         }
+
     }
 }
