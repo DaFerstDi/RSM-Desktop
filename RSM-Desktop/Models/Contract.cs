@@ -10,6 +10,7 @@ namespace RSM_Desktop.Models
     {
         private String _destination = null;
         private int _carriage = 0;
+        private int _victoryPoints = 0;
         private String _cargo = null;
         private long _cost = 0;
 
@@ -19,9 +20,19 @@ namespace RSM_Desktop.Models
             return _destination;
         }
 
-        public void set_destination(String _destination)
+        public void set_destination(string _destination)
         {
             this._destination = _destination;
+        }
+
+        public int get_VictryPoints()
+        {
+            return _victoryPoints;
+        }
+
+        public void set_VictryPoints(int points)
+        {
+            this._victoryPoints = points;
         }
 
         public int get_carriage()

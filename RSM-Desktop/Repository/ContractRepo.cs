@@ -37,6 +37,7 @@ namespace RSM_Desktop.Repository
                 case (2):
                     {
                         contract.set_cargo("Руда железная (ПВ)");
+                        contract.set_VictryPoints(2);
                         switch (blue)
                         {
                             case (2): { contract.set_destination("Западно-Сибирская ж.д."); contract.set_cost(320000); break; }
@@ -50,13 +51,13 @@ namespace RSM_Desktop.Repository
                             case (10): { contract.set_destination("Западно-Сибирская ж.д."); contract.set_cost(320000); break; }
                             case (11): { contract.set_destination("Западно-Сибирская ж.д."); contract.set_cost(320000); break; }
                             case (12): { contract.set_destination("Западно-Сибирская ж.д."); contract.set_cost(320000); break; }
-
                         }
                         break;
                     }
                 case (3):
                     {
                         contract.set_cargo("Строительные грузы (ПВ)");
+                        contract.set_VictryPoints(2);
                         switch (blue)
                         {
                             case (2): { contract.set_destination("Дальневосточная ж.д."); contract.set_cost(1500000); break; }
@@ -76,11 +77,12 @@ namespace RSM_Desktop.Repository
                 case (4):
                     {
                         contract.set_cargo("Кокс (ПВ)");
+                        contract.set_VictryPoints(2);
                         switch (blue)
                         {
                             case (2): { contract.set_destination("Свердловская ж.д."); contract.set_cost(800000); break; }
                             case (3): { contract.set_destination("Западно-Сибирская ж.д."); contract.set_cost(300000); break; }
-                            case (4): { contract.set_destination("Украина"); contract.set_cost(1380000); break; }
+                            case (4): { contract.set_destination("ДНР"); contract.set_cost(1380000); break; }
                             case (5): { contract.set_destination("Московская ж.д."); contract.set_cost(1240000); break; }
                             case (6): { contract.set_destination("Московская ж.д."); contract.set_cost(1240000); break; }
                             case (7): { contract.set_destination("Юго-Восточная ж.д."); contract.set_cost(1260000); break; }
@@ -95,6 +97,7 @@ namespace RSM_Desktop.Repository
                 case (5):
                     {
                         contract.set_cargo("Лес (ПЛ)");
+                        contract.set_VictryPoints(1);
                         switch (blue)
                         {
                             case (2): { contract.set_destination("Западно-Сибирская ж.д."); contract.set_cost(280000); break; }
@@ -114,6 +117,7 @@ namespace RSM_Desktop.Repository
                 case (6):
                     {
                         contract.set_cargo("Цемент (КР)");
+                        contract.set_VictryPoints(1);
                         switch (blue)
                         {
                             case (2): { contract.set_destination("Восточно-Сибирская  ж.д."); contract.set_cost(1140000); break; }
@@ -133,11 +137,12 @@ namespace RSM_Desktop.Repository
                 case (7):
                     {
                         contract.set_cargo("Каменный уголь (ПВ)");
+                        contract.set_VictryPoints(3);
                         switch (blue)
                         {
                             case (2): { contract.set_destination("Беларусь"); contract.set_cost(1300000); break; }
                             case (3): { contract.set_destination("Северо-Кавказская ж.д."); contract.set_cost(1340000); break; }
-                            case (4): { contract.set_destination("Украина"); contract.set_cost(1360000); break; }
+                            case (4): { contract.set_destination("ДНР"); contract.set_cost(1360000); break; }
                             case (5): { contract.set_destination("Западно-Сибирская ж.д."); contract.set_cost(300000); break; }
                             case (6): { contract.set_destination("Западно-Сибирская ж.д."); contract.set_cost(300000); break; }
                             case (7): { contract.set_destination("Октябрьская ж.д."); contract.set_cost(1300000); break; }
@@ -151,7 +156,8 @@ namespace RSM_Desktop.Repository
                     }
                 case (8):
                     {
-                        contract.set_cargo("Нефть (ЦС)");
+                        contract.set_cargo("Нефть и нефтепродукты (ЦС)");
+                        contract.set_VictryPoints(2);
                         switch (blue)
                         {
                             case (2): { contract.set_destination("Восточно-Сибирская  ж.д."); contract.set_cost(1720000); break; }
@@ -171,6 +177,7 @@ namespace RSM_Desktop.Repository
                 case (9):
                     {
                         contract.set_cargo("Грузы в контейнерах (ПЛ)");
+                        contract.set_VictryPoints(1);
                         switch (blue)
                         {
                             case (2): { contract.set_destination("Куйбышевская ж.д."); contract.set_cost(1500000); break; }
@@ -189,7 +196,8 @@ namespace RSM_Desktop.Repository
                     }
                 case (10):
                     {
-                        contract.set_cargo("Зерно (КР)");
+                        contract.set_cargo("Зерновые (КР)");
+                        contract.set_VictryPoints(1);
                         switch (blue)
                         {
                             case (2): { contract.set_destination("Забайкальская ж.д."); contract.set_cost(1740000); break; }
@@ -208,7 +216,8 @@ namespace RSM_Desktop.Repository
                     }
                 case (11):
                     {
-                        contract.set_cargo("Химикаты (ЦС)");
+                        contract.set_cargo("Химические грузы (ЦС)");
+                        contract.set_VictryPoints(1);
                         switch (blue)
                         {
                             case (2): { contract.set_destination("Красноярская ж.д."); contract.set_cost(1400000); break; }
@@ -228,6 +237,7 @@ namespace RSM_Desktop.Repository
                 case (12):
                     {
                         contract.set_cargo("Чёрные металлы (ПВ)");
+                        contract.set_VictryPoints(2);
                         switch (blue)
                         {
                             case (2): { contract.set_destination("Свердловская ж.д."); contract.set_cost(1520000); break; }

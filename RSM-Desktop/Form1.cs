@@ -44,7 +44,7 @@ namespace RSM_Desktop
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Text = "Form1";
-            this.MinimumSize = new Size(820, 540);
+            this.MinimumSize = new Size(890, 598);
             contract = new Contract();
             labelList = new Label[5];
             command1 = new Command("Первая");
@@ -75,7 +75,19 @@ namespace RSM_Desktop
                     carriagesLabel.Text = contract.get_carriage().ToString();
                     costLabel.Text = contract.get_cost().ToString();
                     toLabel.Text = contract.get_destination();
-                }
+                    VictoryPointsRTB.Text = contract.get_VictryPoints().ToString();
+                    VictoryPointsRTB.SelectAll();
+                    VictoryPointsRTB.SelectionAlignment = HorizontalAlignment.Center;
+                    calculate1_Click(this, EventArgs.Empty);
+                    OutRTB_Komand1.Text = command1.getResByName(contract.get_cargo().Substring(0, contract.get_cargo().IndexOf("(")).Trim()).get_value().ToString();
+                    calculate2_Click(this, EventArgs.Empty);
+                    OutRTB_Komand2.Text = command2.getResByName(contract.get_cargo().Substring(0, contract.get_cargo().IndexOf("(")).Trim()).get_value().ToString();
+                    calculate3_Click(this, EventArgs.Empty);
+                    OutRTB_Komand3.Text = command3.getResByName(contract.get_cargo().Substring(0, contract.get_cargo().IndexOf("(")).Trim()).get_value().ToString();
+                    calculate4_Click(this, EventArgs.Empty);
+                    OutRTB_Komand4.Text = command4.getResByName(contract.get_cargo().Substring(0, contract.get_cargo().IndexOf("(")).Trim()).get_value().ToString();
+                
+            }
                 else
                 {
                     throw new Exception();
